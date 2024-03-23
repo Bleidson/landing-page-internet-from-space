@@ -1,0 +1,369 @@
+@font-face {
+    font-family: 'nulshock';
+    src: url('/fonts/nulshock\ bd.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: var(--color-secundary);
+    
+}
+
+:root{
+    --font-title: "nulshock";
+    --color-primary: #3B7EB3;
+    --color-secundary: rgb(255, 255, 255);
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 700,
+  'GRAD' 0,
+  'opsz' 48,
+  ;
+  color: var(--color-primary);
+}
+
+body {
+    background-image: url('/images/background.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-color: black;
+}
+header{
+    display: flex;
+    justify-content: center;
+    padding: 0px 80px;
+}
+.content-header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    max-width: 1300px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 50px;
+}
+
+.logoSpan{
+    font-family: var(--font-title);
+    color: var(--color-secundary);
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+
+}
+
+nav li{
+    list-style-type: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--color-secundary);
+}
+
+.signUpButton{
+    border: 2px solid var(--color-secundary);
+    padding: 10px 40px;
+}
+
+main{
+    width: 100%;
+    max-width: 1150px;
+    padding: 0px 80px;
+    margin: auto;
+    position: relative;
+}
+ h1{
+    font-size: 52px;
+    font-family: var(--font-title);
+ }
+.sections-info{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 98vh;
+}
+
+ 
+
+.content-sections{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 280px;
+    
+}
+
+section h2{
+    font-family: var(--font-title);
+    font-size:42px;
+}
+
+.content-sections button{
+    display: inline-block;
+    padding: 15px 50px;
+    width:max-content;
+    background-color: var(--color-primary);
+    border: none;
+}
+
+
+
+.sections-info img{
+    width: 50%;
+    height: 400px;
+    
+    
+}
+.section-rate{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    height: 98vh;
+    
+}
+.section-rate img{
+    width: 70px;
+    
+}
+
+.rate{
+    display: flex;
+    flex-direction: column
+    ;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #141414;
+    padding: 10px 60px 30px;
+    border-radius: 5px;
+    height: 200px;
+}
+
+.rate h3{
+    font-family: var(--font-title);
+}
+
+.section5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section5 p{
+    margin-top: 20px;
+}
+
+#global-content{
+    text-align: center;
+    width: 600px;
+}
+
+
+.section5 img{
+    width: 70%;
+}
+
+.section8{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    
+   
+  }
+  
+
+  
+.grid-item1, .grid-item3{
+    background-image: linear-gradient(to bottom, #000000af, #07012500);
+}
+
+.grid-item1 h3, .grid-item3 h3{
+    margin: 40px 40px;
+    font-family: var(--font-title)
+}
+
+.most-popular h3{
+    margin: 40px 40px;
+    font-family: var(--font-title)
+}
+.most-popular fieldset{
+    background-image: linear-gradient(to bottom, var(--color-primary), rgba(0, 0, 255, 0));
+    width: 100%;
+    height: 100%;
+    border:none;
+}
+
+.most-popular legend{
+    background-color: var(--color-secundary);
+    padding: 10px 20px;
+    color: var(--color-primary);
+    box-shadow: 0px 10px 20px 5px rgb(13, 82, 122);
+   
+}
+
+
+
+.section9{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 98vh;
+    
+    width: 100%;
+}
+.section9 h2{
+    margin-bottom: 30px;
+}
+#comment-content{
+    
+    width: 650px;
+    margin-bottom: 40px;
+}
+
+.container-comment{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.comment{
+    display: flex;
+    flex-direction: column
+    ;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #141414;
+    padding: 10px ;
+    border-radius: 3px;
+    height: 150px;
+    width: 350px;
+    text-align:left;
+}
+
+.comment:hover{
+    border: 2px solid blue;
+}
+
+.comment-profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.comment-profile img{
+    width: 50px;
+    border-radius: 50%;
+}
+
+.section10{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    background-image: url(/images/black-hole.jpg);
+    background-size: cover;
+    
+    
+}
+
+.section10 button{
+    background-color: #14141400;
+    border: 2px solid white;
+    padding: 10px 40px;
+    margin-top: 40px;
+}
+
+#font-escura{
+    color: #333;
+    font-family: var(--font-title);
+    font-size: 42px;
+}
+
+.section11{
+    width: 100%;
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.section11 img{
+    width: 80px;
+    display: flex;
+}
+
+
+
+.logoFooter{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.content-aboutUs{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    letter-spacing: 0rem;
+    line-height: 2;
+}
+
+.content-aboutUs a, li{
+    list-style-type: none;
+    text-decoration: none;
+}
+.section11 button{
+    background-color: #14141400;
+    border: 2px solid white;
+    padding: 10px 40px;
+    height: 40px;
+}
+
+#copy{
+    text-align: center;
+}
+
